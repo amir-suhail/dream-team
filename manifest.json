@@ -27,7 +27,7 @@
 		"routerClass": "sap.m.routing.Router",
 		"viewType": "XML",
 		"viewPath": "sap.ui.demo.first.view",
-		"controlId": "root",
+		"controlId": "app",
 		"controlAggregation": "pages"
 	  },
 	  "routes": [
