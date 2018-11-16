@@ -32,22 +32,14 @@
 	  },
 	  "routes": [
 		{
-		  "pattern": "overview",
-		  "name": "overview",
-		  "target": "overview"
-		},
-		{
 		  "pattern": "",
 		  "name": "detail",
 		  "target": "detail"
 		}
 	  ],
 	  "targets": {
-		"overview": {
-		  "viewName": "Overview"
-		},
 		"detail": {
-		  "viewName": "Detail"
+		  "viewName": "Details"
 		}
 	  }
 	  },
