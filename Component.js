@@ -1,15 +1,17 @@
-sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/model/json/JSONModel"], function(UIComponent, JSONModel){
-	"use strict";
-	console.log("component");
-	return UIComponent.extend('sap.ui.demo.first.Component', {
-		metadata: {
-			manifest: "json"
-		},
-		
-		init: function () {
-			// create the views based on the url/hash
-			UIComponent.prototype.init.apply(this, arguments);
-			this.getRouter().initialize();
-		}
-	});
+sap.ui.define([
+  "sap/ui/core/UIComponent",
+  "sap/ui/model/json/JSONModel"
+], function (UIComponent, JSONModel) {
+  "use strict";
+  return UIComponent.extend("sap.ui.demo.wt.Component", {
+  metadata : {
+  manifest: "json"
+  },
+  init : function () {
+  // call the init function of the parent
+  UIComponent.prototype.init.apply(this, arguments);
+  // create the views based on the url/hash
+  this.getRouter().initialize();
+  }
+  });
 });
