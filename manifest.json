@@ -33,12 +33,12 @@
 	  "routes": [
 		{
 		  "pattern": "",
-		  "name": "detail",
-		  "target": "detail"
+		  "name": "details",
+		  "target": "details"
 		}
 	  ],
 	  "targets": {
-		"detail": {
+		"details": {
 		  "viewName": "Details"
 		}
 	  }

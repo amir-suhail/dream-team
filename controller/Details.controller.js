@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(Controller, JSONModel, Filter, FilterOperator) {
 	'use strict';
 
-	return Controller.extend('sap.ui.demo.first.controller.App', {
+	return Controller.extend('sap.ui.demo.first.controller.Details', {
 
 		onInit: function() {
 			console.log("controller");
