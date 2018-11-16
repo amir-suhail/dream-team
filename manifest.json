@@ -1,0 +1,68 @@
+{
+	"sap.app": {
+		"id": "sap.ui.demo.first",
+		"type": "application"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"rootView": {
+			"viewName": "sap.ui.demo.first.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.demo.first.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/todoitems.json"
+			}
+		},
+	"routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "sap.ui.demo.wt.view",
+		"controlId": "app",
+		"controlAggregation": "pages"
+	  },
+	  "routes": [
+		{
+		  "pattern": "overview",
+		  "name": "overview",
+		  "target": "overview"
+		},
+		{
+		  "pattern": "detail",
+		  "name": "detail",
+		  "target": "detail"
+		}
+	  ],
+	  "targets": {
+		"overview": {
+		  "viewName": "Overview"
+		},
+		"detail": {
+		  "viewName": "Detail"
+		}
+	  }
+	  },
+	  "resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
+	}
+}
