@@ -10,12 +10,6 @@
 				"sap.m": {}
 			}
 		},
-		"rootView": {
-			"viewName": "sap.ui.demo.first.view.App",
-			"type": "XML",
-			"async": true,
-			"id": "app"
-		},
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -43,7 +37,7 @@
 		  "target": "overview"
 		},
 		{
-		  "pattern": "detail",
+		  "pattern": "",
 		  "name": "detail",
 		  "target": "detail"
 		}
